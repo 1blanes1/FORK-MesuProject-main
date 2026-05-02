@@ -15,6 +15,7 @@ function addPartnerCard(title, img_path, url) {
     img.className = 'organizer-logo';
     img.src = img_path;
     img.alt = title || 'Логотип партнёра';
+    
 
     // Создаём заголовок
     const titleEl = document.createElement('h3');
