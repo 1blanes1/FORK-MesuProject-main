@@ -256,7 +256,7 @@ header {
 
 
 .fone {
-  
+  background-image: url('/static/img/main-page/background.jpg');
   background-repeat: repeat;
   /* узор будет повторяться по всей странице */
   background-size: auto;
@@ -266,6 +266,9 @@ header {
   /* ← ЭТО КЛЮЧЕВОЕ СВОЙСТВО */
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 
@@ -283,12 +286,11 @@ header {
 
 .content-wrapper {
   /* max-width: 1720px; */
-  max-width: 92%;
-  padding: 60px 80px;
-  width: 100%;
+  max-width: 90%; 
   background-color: rgb(237, 242, 242);
   box-sizing: border-box;
   z-index: 1;
+  margin: 0 auto
 }
 
 
@@ -326,9 +328,8 @@ header {
   line-height: 24px;
   letter-spacing: 0%;
   text-align: center;
-
   margin: 0;
-
+  margin-top: 30px;
 }
 
 
@@ -341,7 +342,7 @@ header {
   padding: 40px 30px;
   border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-left: auto;
+  margin-left: 58%;
   /* ← выравниваем вправо */
 }
 
@@ -359,14 +360,18 @@ header {
 
 
 .text-block {
-  max-width: 70%;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .text-block .standard-text {
-  text-align: left;
+  text-align: center;
   color: #000000;
   margin-top: 40px;
-
+  margin-left: auto;
+  margin-right: auto;
   font-family: Exo 2;
   font-weight: 500;
   tyle: Medium;
@@ -377,10 +382,11 @@ header {
 }
 
 .text-block .italic-text {
-  text-align: left;
+  text-align: center;
   color: #000000;
   margin-top: 40px;
-
+  margin-left: auto;
+  margin-right: auto;
   font-family: Exo 2;
   font-weight: 500;
   font-style: italic;

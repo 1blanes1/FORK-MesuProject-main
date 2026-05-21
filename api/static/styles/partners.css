@@ -245,7 +245,7 @@ header {
 
 
 .fone {
-  
+  background-image: url('/static/img/main-page/background.jpg');
   background-repeat: no-repeat;
   /* узор будет повторяться по всей странице */
   background-size: 100%;

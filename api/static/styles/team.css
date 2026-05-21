@@ -245,12 +245,11 @@ header {
 
 
 .fone {
-  
+  background-image: url('/static/img/main-page/background.jpg');
   background-repeat: repeat;
   /* узор будет повторяться по всей странице */
   background-size: auto;
   /* не масштабировать, если это бесшовный паттерн */
-  background-position: top left;
   background-attachment: fixed;
   /* ← ЭТО КЛЮЧЕВОЕ СВОЙСТВО */
   margin: 0;

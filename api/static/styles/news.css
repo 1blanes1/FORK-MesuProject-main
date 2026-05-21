@@ -166,7 +166,7 @@ main {
 
 
 .fone {
-  
+  background-image: url('/static/img/main-page/background.jpg');
   background-repeat: repeat;
   /* узор будет повторяться по всей странице */
   background-size: auto;
@@ -215,13 +215,14 @@ main {
   line-height: 100%;
   letter-spacing: 0%;
   text-align: left;
-  padding-left: 100px;
   display: flex;
   /* ← Ключевое: делаем заголовок флекс-контейнером */
   align-items: center;
+  justify-content: center;
   /* Выравниваем по центру по вертикали */
   gap: 15px;
   /* Расстояние между текстом и мегафоном */
+  
 }
 
 .megaphone-icon {
@@ -254,7 +255,10 @@ main {
 
 .news-item {
   display: flex;
-  padding: 45px 55px;
+  text-align: center;
+  align-items: center;
+  gap: 16px;
+  padding: 25px 35px;
   background-color: #669BBD;
   font-family: "Exo 2";
 }
@@ -268,16 +272,18 @@ main {
 }
 
 .news-img {
-  height: 210px;
-  width: auto;
-  margin-right: 60px;
-  padding-left: 45px;
+  width: 320px;
+  height: 200px;
+  margin-right: 20px;
+  padding-left: 0px;
 }
 
 .news-card-wrapper {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  width: 100%;
+  gap: 12px;
 }
 
 .news-link {
@@ -291,7 +297,9 @@ main {
 }
 
 .news-title {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  display: block;
+  
 }
 
 .news-desc {
