@@ -342,7 +342,7 @@ header {
   padding: 40px 30px;
   border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-left: 58%;
+  margin-left: 58%; 
   /* ← выравниваем вправо */
 }
 
@@ -379,6 +379,7 @@ header {
   leading-trim: NONE;
   line-height: 20px;
   letter-spacing: 0%;
+  
 }
 
 .text-block .italic-text {
@@ -398,45 +399,51 @@ header {
 }
 
 .photo-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr)); /* две колонки на широких экранах */
+  display: flex;
+  flex-wrap: wrap;
   gap: 150px;
   margin-top: 40px;
-  max-width: 70%;
-  justify-content: flex-start;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
 }
 
 
 .grid-photo {
   max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
   max-height: auto;
   object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  display: block;
+  margin: 0 auto;
 }
 
 .indent-italic-text {
   margin-top: 80px;
-
-  text-align: left;
+  text-align: center;
   color: #000000;
-
   font-family: Exo 2;
   font-weight: 500;
   font-style: italic;
   font-size: 20px;
   leading-trim: NONE;
   line-height: 20px;
-  letter-spacing: 0%
+  letter-spacing: 0%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .underline-text {
   margin-top: 60px;
-
-  text-align: left;
+  text-align: center;
   color: #000000;
-
   font-family: Exo 2;
   font-weight: 500;
   font-style: Medium;
@@ -444,15 +451,15 @@ header {
   font-size: 26px;
   leading-trim: NONE;
   line-height: 20px;
-  letter-spacing: 0%
+  letter-spacing: 0%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .bold-text {
   margin-top: 60px;
-
-  text-align: left;
+  text-align: center;
   color: #000000;
-
   font-family: Raleway;
   font-weight: 700;
   font-style: Bold;
@@ -460,14 +467,16 @@ header {
   leading-trim: NONE;
   line-height: 20px;
   letter-spacing: 0%;
-
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .under-image {
-  text-align: left;
+  text-align: center;
   color: #000000;
   margin-top: 20px;
-
+  margin-left: auto;
+  margin-right: auto;
   font-family: Exo 2;
   font-weight: 500;
   font-style: Medium;
@@ -479,6 +488,9 @@ header {
 .learn-more-container {
   margin-top: 30px;
   margin-bottom: 60px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .learn-more {
@@ -488,6 +500,9 @@ header {
   font-weight: 700;
   color: #333;
   text-decoration: none;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .learn-more:hover {
@@ -495,12 +510,17 @@ header {
 }
 
 .sources {
-  max-width: 70%;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  margin-top: 30px;
 }
 
 .sources h3 {
   font-family: "Raleway", sans-serif;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 .sources ol {
@@ -515,9 +535,10 @@ header {
 }
 
 .sources p {
-  text-align: left;
+  text-align: center;
   color: #000000;
-
+  margin-left: auto;
+  margin-right: auto;
   font-family: Exo 2;
   font-weight: 500;
   style: Medium;
@@ -528,10 +549,11 @@ header {
 }
 
 .mail {
-  text-align: left;
+  text-align: center;
   color: #000000;
   margin-top: 40px;
-
+  margin-left: auto;
+  margin-right: auto;
   font-family: Exo 2;
   font-weight: 500;
   font-size: 14px;
@@ -550,15 +572,16 @@ header {
 }
 
 .footnote-container {
-  max-width: 80%;
+  max-width: 90%;
   margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .footnote {
-  text-align: left;
   color: #000000;
   margin-top: 0.5em;
-
   font-family: Exo 2;
   font-weight: 500;
   font-style: Medium;
@@ -848,3 +871,4 @@ header {
     gap: 32px;
   }
 }
+
