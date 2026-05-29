@@ -366,10 +366,9 @@ header {
 
 
 .text-block .standard-text {
-  text-align: left;
+  text-align: center;
   color: #000000;
   margin-top: 40px;
-
   font-family: Exo 2;
   font-weight: 500;
   tyle: Medium;
@@ -380,10 +379,9 @@ header {
 }
 
 .text-block .italic-text {
-  text-align: left;
+  text-align: center;
   color: #000000;
   margin-top: 40px;
-
   font-family: Exo 2;
   font-weight: 500;
   font-style: italic;
@@ -395,19 +393,23 @@ header {
 }
 
 .photo-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr)); /* две колонки на широких экранах */
+  display: flex;
+  flex-wrap: wrap;
   gap: 150px;
   margin-top: 40px;
-  max-width: 70%;
-  margin-left: auto; 
+  max-width: 90%;
+  margin-left: auto;
   margin-right: auto;
-  justify-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 
 .grid-photo {
   max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
   max-height: auto;
   object-fit: cover;
   border-radius: 8px;
@@ -420,7 +422,7 @@ header {
 .indent-italic-text {
   margin-top: 80px;
   color: #000000;
-
+  text-align: center;
   font-family: Exo 2;
   font-weight: 500;
   font-style: italic;
@@ -500,22 +502,24 @@ header {
 }
 
 .sources {
-  max-width: 70%;
+  max-width: 90%;
   margin-left: auto;
-  margin-right: auto;  
+  margin-right: auto;
   text-align: center;
 }
 
 
 .sources h3 {
   font-family: "Raleway", sans-serif;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 .sources ol {
   margin-bottom: 20px;
   margin-left: 20px;     /* добавили отступ слева */
-  padding-left: 20px;    /* чтобы текст не прилипал к маркеру */
+  padding-left: 20px;
+  text-align: left;    /* чтобы текст не прилипал к маркеру */
 }
 
 .sources li {
@@ -524,9 +528,10 @@ header {
 }
 
 .sources p {
-  text-align: left;
+  text-align: center;
   color: #000000;
-
+  margin-left: auto;
+  margin-right: auto;
   font-family: Exo 2;
   font-weight: 500;
   style: Medium;
@@ -852,5 +857,10 @@ header {
   margin-right: auto;
 }
 
+.sources-list {
+  max-width: 90%;
+  text-align: left;
+  
+}
 
 
